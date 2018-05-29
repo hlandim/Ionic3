@@ -1,13 +1,13 @@
-import { BadgesPage } from './../pages/badges/badges';
-
-import { AlertPage } from './../pages/alert/alert';
-import { ActionSheetPage } from './../pages/action-sheet/action-sheet';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+import { ActionSheetPage } from '../pages/action-sheet/action-sheet';
+import { AlertPage } from '../pages/alert/alert';
+import { BadgesPage } from '../pages/badges/badges';
+import { ButtonPage } from '../pages/button/button';
 
 @Component({
   templateUrl: 'app.html'
@@ -15,9 +15,9 @@ import { HomePage } from '../pages/home/home';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = ButtonPage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{ title: string, component: any }>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
@@ -28,6 +28,7 @@ export class MyApp {
       { title: 'ActionSheet', component: ActionSheetPage },
       { title: 'Alert', component: AlertPage },
       { title: 'Badges', component: BadgesPage },
+      { title: 'Botões', component: ButtonPage },
     ];
 
   }
