@@ -1,9 +1,3 @@
-<!--
-  Generated template for the CardPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
@@ -14,5 +8,40 @@
 
 
 <ion-content padding>
-
+  <ion-card>
+    <ion-card-header>
+      Card Simples - Título
+    </ion-card-header>
+    <ion-card-content>
+      Card Simples - Conteudo
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-icon name="cart"></ion-icon>
+      Carrinho 
+     
+    </ion-card-header>
+    <ion-list >
+      <button ion-item>
+        <ion-icon name="pizza" item-start></ion-icon>
+        Pizza
+      </button>
+      <button ion-item>
+        <ion-icon name="beer" item-start></ion-icon>
+        Beer
+      </button>
+      <button ion-item>
+        <ion-icon name="cafe" item-start></ion-icon>
+        Café
+      </button>
+    </ion-list>
+  </ion-card>
+  <ion-card>
+    <img src="https://hackster.imgix.net/uploads/attachments/183867/ionic.png?auto=compress&w=900&h=675&fit=min&fm=jpg"/>
+    <ion-card-content>
+      <ion-card-title>Curso de ionic</ion-card-title>
+      <p>Testando cards</p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

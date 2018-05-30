@@ -3,16 +3,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-card',
-  templateUrl: 'card.html',
+  selector: 'page-checkbox',
+  templateUrl: 'checkbox.html',
 })
-export class CardPage {
+export class CheckboxPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CardPage');
+    console.log('ionViewDidLoad CheckboxPage');
   }
 
 }

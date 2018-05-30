@@ -1,13 +1,17 @@
+import { RangePage } from './../pages/range/range';
+import { HomePage } from './../pages/home/home';
+import { CardPage } from './../pages/card/card';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HomePage } from '../pages/home/home';
 import { ActionSheetPage } from '../pages/action-sheet/action-sheet';
 import { AlertPage } from '../pages/alert/alert';
 import { BadgesPage } from '../pages/badges/badges';
 import { ButtonPage } from '../pages/button/button';
+import { CheckboxPage } from './../pages/checkbox/checkbox';
+import { RadioPage } from '../pages/radio/radio';
 
 @Component({
   templateUrl: 'app.html'
@@ -15,7 +19,7 @@ import { ButtonPage } from '../pages/button/button';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = ButtonPage;
+  rootPage: any = RangePage;
 
   pages: Array<{ title: string, component: any }>;
 
@@ -29,6 +33,10 @@ export class MyApp {
       { title: 'Alert', component: AlertPage },
       { title: 'Badges', component: BadgesPage },
       { title: 'Botões', component: ButtonPage },
+      { title: 'Cards', component: CardPage },
+      { title: 'Checkbox', component: CheckboxPage },
+      { title: 'Radio', component: RadioPage },
+      { title: 'Range', component: RangePage }
     ];
 
   }

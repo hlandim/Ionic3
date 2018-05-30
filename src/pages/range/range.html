@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Range</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-item>
+    <label value=(screenBright)></label>
+    <ion-range min="0" max="1000" step="400" snaps="true" [(ngModel)]="screenBright">
+      <ion-icon range-left small name="sunny">0</ion-icon>
+      <ion-icon range-right name="sunny">100</ion-icon>
+    </ion-range>
+  </ion-item>
+  <label>{{faixaEtaria.lower}}</label>
+  <ion-item>
+    
+    <ion-range dualKnobs="true" pin="true" [(ngModel)]="faixaEtaria">
+      <ion-icon range-left small name=""></ion-icon>
+      <ion-icon range-right name=""></ion-icon>
+    </ion-range>
+  </ion-item>
+
+</ion-content>

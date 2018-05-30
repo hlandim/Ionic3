@@ -1,3 +1,6 @@
+import { RangePage } from './../pages/range/range';
+import { RadioPage } from './../pages/radio/radio';
+import { CardPage } from './../pages/card/card';
 import { ButtonPage } from './../pages/button/button';
 import { BadgesPage } from './../pages/badges/badges';
 import { AlertPage } from './../pages/alert/alert';
@@ -11,6 +14,7 @@ import { HomePage } from '../pages/home/home';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { CheckboxPage } from '../pages/checkbox/checkbox';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ActionSheetPage,
     AlertPage,
     BadgesPage,
-    ButtonPage
+    ButtonPage,
+    CardPage,
+    CheckboxPage,
+    RadioPage,
+    RangePage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +40,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ActionSheetPage,
     AlertPage,
     BadgesPage,
-    ButtonPage
+    ButtonPage,
+    CardPage,
+    CheckboxPage,
+    RadioPage,
+    RangePage
   ],
   providers: [
     StatusBar,
