@@ -1,4 +1,3 @@
-import { RangePage } from './../pages/range/range';
 import { HomePage } from './../pages/home/home';
 import { CardPage } from './../pages/card/card';
 import { Component, ViewChild } from '@angular/core';
@@ -12,6 +11,8 @@ import { BadgesPage } from '../pages/badges/badges';
 import { ButtonPage } from '../pages/button/button';
 import { CheckboxPage } from './../pages/checkbox/checkbox';
 import { RadioPage } from '../pages/radio/radio';
+import { DatetimePage } from './../pages/datetime/datetime';
+import { RangePage } from './../pages/range/range';
 
 @Component({
   templateUrl: 'app.html'
@@ -19,7 +20,7 @@ import { RadioPage } from '../pages/radio/radio';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = RangePage;
+  rootPage: any = HomePage;
 
   pages: Array<{ title: string, component: any }>;
 
@@ -36,7 +37,8 @@ export class MyApp {
       { title: 'Cards', component: CardPage },
       { title: 'Checkbox', component: CheckboxPage },
       { title: 'Radio', component: RadioPage },
-      { title: 'Range', component: RangePage }
+      { title: 'Range', component: RangePage },
+      { title: 'DateTime', component: DatetimePage }
     ];
 
   }

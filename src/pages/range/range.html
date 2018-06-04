@@ -9,16 +9,17 @@
 
 <ion-content padding>
 
+  <label>{{screenBright}}</label>
   <ion-item>
-    <label value=(screenBright)></label>
-    <ion-range min="0" max="1000" step="400" snaps="true" [(ngModel)]="screenBright">
+    <ion-range min="0" max="1000" step="80" snaps="true" pin="true" [(ngModel)]="screenBright">
       <ion-icon range-left small name="sunny">0</ion-icon>
       <ion-icon range-right name="sunny">100</ion-icon>
     </ion-range>
   </ion-item>
-  <label>{{faixaEtaria.lower}}</label>
+
+  <label>{{faixaEtaria.lower}} - {{faixaEtaria.upper}}</label>
+  
   <ion-item>
-    
     <ion-range dualKnobs="true" pin="true" [(ngModel)]="faixaEtaria">
       <ion-icon range-left small name=""></ion-icon>
       <ion-icon range-right name=""></ion-icon>
