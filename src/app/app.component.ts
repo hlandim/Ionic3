@@ -1,7 +1,6 @@
-import { HomePage } from './../pages/home/home';
-import { CardPage } from './../pages/card/card';
+import { InputPage } from './../pages/input/input';
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
+import { Nav, Platform, Icon } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -13,6 +12,11 @@ import { CheckboxPage } from './../pages/checkbox/checkbox';
 import { RadioPage } from '../pages/radio/radio';
 import { DatetimePage } from './../pages/datetime/datetime';
 import { RangePage } from './../pages/range/range';
+import { IconsPage } from './../pages/icons/icons';
+import { GridPage } from './../pages/grid/grid';
+import { FabPage } from './../pages/fab/fab';
+import { HomePage } from './../pages/home/home';
+import { CardPage } from './../pages/card/card';
 
 @Component({
   templateUrl: 'app.html'
@@ -20,7 +24,7 @@ import { RangePage } from './../pages/range/range';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = InputPage;
 
   pages: Array<{ title: string, component: any }>;
 
@@ -38,7 +42,11 @@ export class MyApp {
       { title: 'Checkbox', component: CheckboxPage },
       { title: 'Radio', component: RadioPage },
       { title: 'Range', component: RangePage },
-      { title: 'DateTime', component: DatetimePage }
+      { title: 'DateTime', component: DatetimePage },
+      { title: 'Fab', component: FabPage },
+      { title: 'Grid', component: GridPage },
+      { title: 'Icons', component: IconsPage },
+      { title: 'Inputs', component: InputPage }
     ];
 
   }
@@ -58,3 +66,4 @@ export class MyApp {
     this.nav.setRoot(page.component);
   }
 }
+

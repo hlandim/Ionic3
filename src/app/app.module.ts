@@ -1,3 +1,7 @@
+import { InputPage } from './../pages/input/input';
+import { IconsPage } from './../pages/icons/icons';
+import { GridPage } from './../pages/grid/grid';
+import { FabPage } from './../pages/fab/fab';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule, ActionSheet } from 'ionic-angular';
@@ -29,7 +33,11 @@ import { ActionSheetPage } from './../pages/action-sheet/action-sheet';
     CheckboxPage,
     RadioPage,
     RangePage,
-    DatetimePage
+    DatetimePage,
+    FabPage,
+    GridPage,
+    IconsPage,
+    InputPage
   ],
   imports: [
     BrowserModule,
@@ -47,7 +55,11 @@ import { ActionSheetPage } from './../pages/action-sheet/action-sheet';
     CheckboxPage,
     RadioPage,
     RangePage,
-    DatetimePage
+    DatetimePage,
+    FabPage,
+    GridPage,
+    IconsPage,
+    InputPage
   ],
   providers: [
     StatusBar,
